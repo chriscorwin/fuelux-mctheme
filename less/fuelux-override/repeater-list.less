@@ -5,26 +5,6 @@
 		tr {
 			box-shadow: none;
 
-			&.selected {
-				&:focus {
-					outline: 1px dotted #66afe9;
-				}
-
-				&:hover {
-					td {
-						background: @blue-sky;
-					}
-				}
-
-				td {
-					background: @blue-slate;
-					color: @brand-info-dark;
-				}
-
-				td:first-child {
-					padding-left: 30px;
-				}
-			}
 
 			th {
 				background: #f4f6f7;
@@ -143,6 +123,39 @@
 				border-left: none;
 				border-right: none;
 			}
+
+
+			&.selected {
+				&:focus {
+					outline: 1px dotted #66afe9;
+				}
+
+				&:hover {
+					td {
+						background: @blue-sky;
+					}
+				}
+
+				td {
+					background: @blue-slate;
+					color: @brand-info-dark;
+				}
+
+				td:first-child {
+					padding-left: 30px;
+				}
+			}
+
+
+
+
+			&.selectable{
+				&:hover td {
+					background: @selectableHover;
+					cursor: pointer;
+				}
+			}
+
 
 			&:focus {
 				outline: 1px dotted #66afe9;
