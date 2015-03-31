@@ -125,27 +125,6 @@
 			}
 
 
-			&.selected {
-				&:focus {
-					outline: 1px dotted #66afe9;
-				}
-
-				&:hover {
-					td {
-						background: @blue-sky;
-					}
-				}
-
-				td {
-					background: @blue-slate;
-					color: @brand-info-dark;
-				}
-
-				td:first-child {
-					padding-left: 30px;
-				}
-			}
-
 
 
 
@@ -153,6 +132,31 @@
 				&:hover td {
 					background: @selectableHover;
 					cursor: pointer;
+				}
+
+				&.selected {
+					&:focus {
+						outline: 1px dotted #66afe9;
+					}
+
+					&:hover {
+						td {
+							background: @blue-sky;
+						}
+					}
+
+					td {
+						background: @blue-slate;
+						color: @brand-info-dark;
+						&.sorted {
+							background: darken(@blue-slate, 5%);
+							color: darken(@brand-info-dark, 5%);
+						}
+					}
+
+					td:first-child {
+						padding-left: 30px;
+					}
 				}
 			}
 

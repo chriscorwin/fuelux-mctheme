@@ -388,6 +388,7 @@ define(function(require) {
 					thumbnail(options, callback);
 				}
 			},
+			list_highlightSortedColumn: true,
 			list_selectable: 'multi',
 			list_noItemsHTML: 'no items found',
 			thumbnail_noItemsHTML: 'no items found',
