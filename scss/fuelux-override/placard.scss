@@ -1,0 +1,23 @@
+.fuelux .placard {
+	&-cancel {
+		color: $blue-steel;
+		font-size: 10px;
+	}
+
+	.placard-field {
+		&[disabled] {
+			background: $disabled-background;
+			color: #cfcfcf;
+		}
+
+		&.glass {
+			&[disabled] {
+				background: none;
+			}
+		}
+	}
+}
+
+.fuelux .placard-popup {
+	background-color: $blue-slate;
+}

@@ -1,0 +1,129 @@
+//alerts
+//
+//basic styles are described in bootstrap-css/helper-classes.scss
+
+// Dismissible alerts
+//
+// Adjust close button's positioning.
+
+@mixin alert-icon-size() {
+	width: 21px;
+	height: 21px;
+	margin-bottom: -1px;
+}
+@mixin alert-before() {
+
+
+	&:before {
+		.fuelux-icon;
+		.fuelux-icon-warning;
+		content: '';
+		position: absolute;
+		left: 4px;
+		top: 4px;
+		.alert-icon-size;
+	}
+}
+
+
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.//interesting!
+.alert-dismissible {
+
+	// Adjust close link position
+	.close {
+		top: -4px;
+		right: -13px;
+
+		&:hover, &:focus {
+			color: #2168A7;
+		}
+	}
+}
+
+.alert {
+	font-size: 12px;
+	color: #222;
+	border: 1px solid #999;
+	padding: 6px 21px 6px 34px;
+	position: relative;
+
+	.alert-before;
+
+	strong {
+		font-weight: bold;
+	}
+
+	a {
+		font-weight: normal;
+		color: #2168A7;
+		cursor: pointer;
+	}
+
+	small {
+		color: #4b4b4b;
+		font-size: 11px;
+		font-weight: normal;
+	}
+
+	//remove icon
+	span.form-control-feedback {
+		color: #bbb;
+		top: 3px;
+		right: 2px;
+		cursor: pointer;
+
+		&:hover, &.hover{
+			color: #2168A7;
+		}
+	}
+
+	.alert-link {
+		font-weight: normal;
+		color: #2168A7;
+		cursor: pointer;
+	}
+
+	&-block {
+		&:before {
+			top: 13px;
+		}
+	}
+	&-success {
+		background-color: #E9FCDE;
+		border-color: #B8D8A5;
+		&:before {
+			.fuelux-icon-success;
+			.alert-icon-size;
+		}
+
+	}
+	&-warning {
+		background-color: #FFF1E1;
+		border-color: #F8D8B3;
+		&:before {
+			.fuelux-icon-warning;
+			.alert-icon-size;
+		}
+
+	}
+	&-danger {
+		background-color: #FCECED;
+		border-color: #EDBFBF;
+		&:before {
+			.fuelux-icon-danger;
+			.alert-icon-size;
+		}
+
+	}
+	&-info {
+		background-color: #E7F3FE;
+		border-color: #BED5E8;
+		&:before {
+			.fuelux-icon-info;
+			.alert-icon-size;
+		}
+
+	}
+}
+

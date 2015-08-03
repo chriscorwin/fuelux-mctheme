@@ -2,7 +2,7 @@
   "dependencies": {
     "jquery": "latest",
     "requirejs": "2.x",
-    "bootstrap": "3.x",
+    "bootstrap-sass": "3.x",
     "moment": "2.x",
     "fuelux": "3.x"
   },

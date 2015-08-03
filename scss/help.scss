@@ -1,0 +1,19 @@
+@import "icons/icons-svg.scss";
+
+.fueluxicon-question-mark, .fuel-help {
+	display: inline-block;
+	@extend .fuelux-icon;
+	@extend .fuelux-icon-help;
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	outline: 0;
+
+	&:hover, &:focus {
+		@extend .fuelux-icon-help-hover;
+		width: 13px;
+		height: 13px;
+	}
+}
