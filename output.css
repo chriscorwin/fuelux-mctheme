@@ -1,48 +1,45 @@
 /*
-Syntax error: Invalid CSS after "		.fuelux-icon": expected "{", was ";"
-        on line 18 of scss/bootstrap-override/alerts.scss
+Syntax error: Invalid CSS after "	&": expected "{", was "-block {"
+              
+              "-block" may only be used at the beginning of a compound selector.
+        on line 87 of scss/bootstrap-override/alerts.scss
         from line 16 of scss/bootstrap-override.scss
         from line 12 of scss/fuelux-mctheme.scss
 
-13: }
-14: @mixin alert-before() {
-15: 
-16: 
-17: 	&:before {
-18: 		.fuelux-icon;
-19: 		.fuelux-icon-warning;
-20: 		content: '';
-21: 		position: absolute;
-22: 		left: 4px;
-23: 		top: 4px;
+82: 		font-weight: normal;
+83: 		color: #2168A7;
+84: 		cursor: pointer;
+85: 	}
+86: 
+87: 	&-block {
+88: 		&:before {
+89: 			top: 13px;
+90: 		}
+91: 	}
+92: 	&-success {
 
 Backtrace:
-scss/bootstrap-override/alerts.scss:18
+scss/bootstrap-override/alerts.scss:87
 scss/bootstrap-override.scss:16
 scss/fuelux-mctheme.scss:12
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1147:in `expected'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:534:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:692:in `block in simple_selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1095:in `throw_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:692:in `simple_selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:640:in `_selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:619:in `selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:603:in `selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:528:in `ruleset'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1105:in `block in catch_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1105:in `catch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1105:in `catch_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `declaration_or_ruleset'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:543:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:543:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:186:in `mixin_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:174:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:146:in `directive'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
@@ -87,4 +84,4 @@ scss/fuelux-mctheme.scss:12
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"		.fuelux-icon\": expected \"{\", was \";\"\A         on line 18 of scss/bootstrap-override/alerts.scss\A         from line 16 of scss/bootstrap-override.scss\A         from line 12 of scss/fuelux-mctheme.scss\A \A 13: }\A 14: @mixin alert-before() {\A 15: \A 16: \A 17: 	&:before {\A 18: 		.fuelux-icon;\A 19: 		.fuelux-icon-warning;\A 20: 		content: '';\A 21: 		position: absolute;\A 22: 		left: 4px;\A 23: 		top: 4px;"; }
+  content: "Syntax error: Invalid CSS after \"	&\": expected \"{\", was \"-block {\"\A               \A               \"-block\" may only be used at the beginning of a compound selector.\A         on line 87 of scss/bootstrap-override/alerts.scss\A         from line 16 of scss/bootstrap-override.scss\A         from line 12 of scss/fuelux-mctheme.scss\A \A 82: 		font-weight: normal;\A 83: 		color: #2168A7;\A 84: 		cursor: pointer;\A 85: 	}\A 86: \A 87: 	&-block {\A 88: 		&:before {\A 89: 			top: 13px;\A 90: 		}\A 91: 	}\A 92: 	&-success {"; }
